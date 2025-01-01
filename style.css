@@ -9,11 +9,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 4px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 95;
 }
 .header .logo{
     font-size: 1.7rem;
@@ -26,7 +26,7 @@
     color: white;
     text-decoration: none;
     margin-left: 40px;
-}
+}                                                 
 .nav a::after{
     content: '';
     position:absolute;
@@ -183,9 +183,12 @@
 }
 .hero .hero_split{
     width: 50%;
-    min-height: 100vh;
+    min-height: 105vh;
     display: flex;
     align-items: center;
+}
+.con{
+    margin-top: 20%;
 }
 .left .con{
     color: white;
@@ -208,15 +211,17 @@
     border: .2rem solid rgba(255, 255, 255, 0.286);
     font-size: 1.5rem;
     color: white;
-    border-radius: 4rem;
+    border-radius: 8px;
+    margin-top: 5%;
     letter-spacing: .1re;
 }
 .con button:hover{
     background: radial-gradient(at bottom right,#5a4740,#2c1e1e);
 }
 .right img{
-    height: 68%;
-    padding-left: 3rem;
+    height: 90%;
+    padding-left: 4rem;
+    padding-top: 4rem;
 }
 .middle{
     top: 50%;
@@ -225,6 +230,7 @@
     position: absolute;
 }
 .middle .circle{
+    
     width: 9rem;
     height: 9rem;
     background-color: white;
@@ -232,8 +238,10 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    animation: rotate 10s linear infinite;
 }
 .middle .circle:nth-child(1){
+    margin-top: 90%;
     background-image: url(powder.jpeg);
     background-size: 350%;
 }
@@ -259,5 +267,82 @@
     border-radius: 8rem;
     border: .5rem dashed white;
     padding: .4rem;
+    
 
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-right: 3px;
+    
+    
+
+}
+.about .about-info{
+    line-height: 1.5;
+    width: 40rem;
+    color: #2c1e1e;
+    
+    
+}
+.about .about-info h3{
+    font-size: 25px;
+    letter-spacing: .2px;
+}
+.about .about-info p{
+    font-size: 16px;
+    margin-top: 2%;
+    letter-spacing: .7px;
+    margin-bottom: 0;
+}
+.about .about-info button{
+    /* margin-top: 3%;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #71412a;
+    background-color: #71412a;
+    color: white;
+    box-shadow: #2c1e1e;
+    text-align: center;
+    font-weight: 500px;
+    font-size: 15px; */
+    background: radial-gradient(at top left,#5a4740,#2c1e1e);
+    padding: .5rem 1rem;
+    border: .2rem solid rgba(255, 255, 255, 0.286);
+    font-size: 1rem;
+    color: white;
+    border-radius: 8px;
+    margin-top: 5%;
+    letter-spacing: .1re;
+}
+.about .about-info button:hover{
+    background: radial-gradient(at bottom right,#5a4740,#2c1e1e);
+}
+.facilities{
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+    
+}
+.facilities .line{
+    background-color: #71412a;
+    height: 5px;
+    width: 75px;
+    
+}
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
