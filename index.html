@@ -4,11 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffee</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .logo1 img{
+            height: 5rem;
+            margin-top: 3%;
+        
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: rgb(46, 41, 41);">
     <header class="header">
+        <div class="logo1"><img src="logo.png" alt="">
         <a href="#" class="logo">Coffee</a>
-        <nav class="nav">
+        </div>
+        <nav class="nav" >
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Menu</a>
@@ -16,35 +25,22 @@
         </nav>
     </header>
 
-    <section class="home">
-        <div class="content">
-            <h2>Coffee Build Your Mind</h2>
-            <p>dfghjk sdfghjkl dsfghjkl sfdgfhj dfghvbj sdfghhj sertyghv</p>
-            <a href="#">Get Started</a>
+    <section class="hero">
+        <div class=" hero_split left">
+            <div class="con">
+                <h1>Coffee Time</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum unde, repellat magni ipsa fugiat ea atque harum sunt a illo nulla, enim placeat quos aut asperiores veniam. Eum, quis?</p>
+                <button>Category</button>
+            </div>
         </div>
+        <div class="middle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
 
-        <div class="wrapper-login">
-            <h2>Memeber Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="email" required>
-                    <label>Enter your email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="password" required>
-                    <label>Enter your password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="register">
-                    <p>Not a Member? <a href="#">Sign up now</a></p>
-                </div>
-            </form>
+        </div>
+        <div class=" hero_split right">
+            <img src="logo.png" alt="">
         </div>
     </section>
     
