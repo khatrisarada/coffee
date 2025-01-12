@@ -8,7 +8,6 @@
         .logo1 img{
             height: 5rem;
             margin-top: 3%;
-        
         }                           
     </style>
 </head>
@@ -18,15 +17,17 @@
         <a href="#" class="logo">Coffee</a>
         </div>
         <nav class="nav" >
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html">Login</a>
+
         </nav>
     </header>
 
-    <section class="hero">
-        <div class=" hero_split left">
+    <section class="hero" id="home" >
+        <div class=" hero_split left" >
             <div class="con">
                 <h1>Coffee Time</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum unde, repellat magni ipsa fugiat ea atque harum sunt a illo nulla, enim placeat quos aut asperiores veniam. Eum, quis?</p>
@@ -44,7 +45,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about"  style="background-color: rgb(199, 174, 136);">
         <img src="coffee8.webp" alt="" style="width: 54.5%; height: 50%;">
         <div class="about-info">
             <h3>A cup of coffee can complete your day</h3>
@@ -66,38 +67,153 @@
     
     <section class="facilities">
         <h1>Our Facilities</h1>
-        <div class="line"></div>
-    <div class="menu">
-        
-        <div class="fac">
-            <img src="logo.png" alt="">
-            <h4>Varities Of Coffee</h4>
-            <p>lorasgdasdya asbdadyah syduadh sdgahs</p>
+        <div class="menu anim">
+            <div class="fac">
+                <div class="fac-icon">
+                    <img src="varity.webp" alt="Varieties of Coffee">
+                </div>
+                <h4>Varities Of Coffee</h4>
+                <p>Explore our wide range of coffee flavors from around the world.</p>
+            </div>
+            <div class="fac">
+                <div class="fac-icon">
+                    <img src="coffeebeans.jpeg" alt="Coffee Beans">
+                </div>
+                <h4>Coffee Beans</h4>
+                <p>Freshly roasted beans for the perfect cup every time.</p>
+            </div>
+            <div class="fac">
+                <div class="fac-icon">
+                    <img src="bre.jpeg" alt="Breakfast and Sweets">
+                </div>
+                <h4>Breakfast And Sweets</h4>
+                <p>Pair your coffee with delicious breakfast and sweet treats.</p>
+            </div>
+            <div class="fac">
+                <div class="fac-icon">
+                    <img src="red.webp" alt="Ready To Go Coffee">
+                </div>
+                <h4>Ready To Go Coffee</h4>
+                <p>Grab your favorite coffee on the go, made just for you.</p>
+            </div>
         </div>
-
-        <div class="fac">
-            <img src="logo.png" alt="">
-            <h4>Coffee Beans</h4>
-            <p>lorasgdasdya asbdadyah syduadh sdgahs</p>
+    </section>
+    <section class="popular" id="menu">
+        <h1>Popular Menu</h1>
+        <div class="menu">
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="lo.webp" alt="Love You Coffee">
+                </div>
+                <p>Love You Coffee</p>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="cap.jpeg" alt="Cappuccino">
+                </div>
+                <p>Cappuccino</p>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="moc.jpg" alt="Mocha Coffee">
+                </div>
+                <p>Mocha Coffee</p>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="far.webp" alt="Frappuccino">
+                </div>
+                <p>Frappuccino</p>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="bla.webp" alt="Black Coffee">
+                </div>
+                <p>Black Coffee</p>
+            </div>
+            <div class="coffee">
+                <div class="coffee-image">
+                    <img src="co.jpg" alt="Love Heart">
+                </div>
+                <p>Love Heart</p>
+            </div>
         </div>
+    </section>
+    <h1 style="text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;" id="contact">Contact Us</h1>
+    <section class="contact" id="contact">
+            <form class="cot">
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" id="email" placeholder="Enter your email"><br><br>
+                
+                <label for="message"><b>Message</b></label><br>
+                <textarea id="message" placeholder="Enter your message"></textarea><br><br>
+                
+                <button class="btn">Submit</button>
+            </form>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28270.53585231291!2d85.32648403955076!3d27.6611336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb17d55b3156cd%3A0x27ec539fc6e49b7a!2sThe%20Lost%20Sip%20Coffee%20House!5e0!3m2!1sen!2snp!4v1735803083691!5m2!1sen!2snp" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </section>  
 
-        <div class="fac">
-            <img src="logo.png" alt="">
-            <h4>Breakfast And Sweets</h4>
-            <p>lorasgdasdya asbdadyah syduadh sdgahs</p>
+    <!-- HTML for Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p style="width: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel urna eu purus hendrerit efficitur.</p>
         </div>
-
-        <div class="fac">
-            <img src="logo.png" alt="">
-            <h4>Read To Go Coffee</h4>
-            <p>lorasgdasdya asbdadyah syduadh sdgahs</p>
+        <div class="footer-section">
+            <h3 >Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: coffee@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
         </div>
     </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+    </div>
+</footer>
 
-        
-
-
-    </section>
     
 </body>
 </html>
+<script>
+    // Function to handle revealing elements on scroll
+function revealOnScroll() {
+    const elements = document.querySelectorAll('.anim');
+    elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Check if element is in the viewport
+        if (rect.top < windowHeight - 100) {
+            element.classList.add('show');
+        }
+    });
+}
+
+// Listen to the scroll event
+window.addEventListener('scroll', revealOnScroll);
+
+// Call the function initially to show elements already in the viewport
+revealOnScroll();
+
+</script>
